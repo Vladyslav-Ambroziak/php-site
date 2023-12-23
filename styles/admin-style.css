@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html {
+    height: auto;
+    background-color: #edf2f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0%;
+    height: 100%;
+    display: flex;
+}
+p{
+   margin: 0%;
+   padding: 1.2em;
+}
+
+.option-panel {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    background-color: #1f3047;
+    color: #dbfff3;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.list-products {
+    width: 72%;
+    margin-left: 33%;
+    text-align: center;
+}
+
+.panel {
+    width: 90%;
+    margin: 4%;
+    padding: 0.2em;
+    background-color: #293e5a;
+    border: solid #edf2f7 0.1em;
+    border-radius: 0.6em;
+    text-align: center;
+}
+
+.added {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.deleted {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.updated {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.title-option {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* Added panel */
+
+.add {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.name-product {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.price-product {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.url-img-product {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/* Deleted panel */
+
+.delete {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.id-product {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.btn-del {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 20%;
+}
+
+/* Updated panel */
+
+.update {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.find-product{
+    
+    /* grid-row-start: 2; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.change-product{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+}
+
+.id-prod-update{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 0;
+    color: #FFFFFF;
+    background-color: #293e5a;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0.7em 0 2em 0;
+}
+
+/* .name-product-upd{
+
+}
+.price-product-upd{
+
+}
+.url-img-product-upd{
+
+} */
+
+
+
+/* input text */
+
+.input-container {
+    margin-left: 10px;
+    width: 90%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: #fff;
+    pointer-event: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e74c3c;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
+
+}
+
+/* button */
+
+button {
+    width: 60%;
+    height: 60%;
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(30, 144, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+button:active {
+    transform: translate(0em, 0.2em);
+}
+
+.btn-add {
+    /* margin: 0.6em;
+    margin-bottom: 1.8em; */
+    margin-left: 20%;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/* list products */
+
+.name-columns{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 7fr 2fr;
+    border: solid;
+    border-bottom: 0.3em solid #e74c3c;
+}
+
+.info-product{
+    border: solid;
+    border-top: 0.01em;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 7fr 2fr;
+}

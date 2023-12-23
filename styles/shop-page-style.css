@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    height: auto;
+    margin: 0;
+    background-color: #BF814B;
+    font-family: 'Montserrat', sans-serif;
+}
+.up-bar {
+    background-color: #592202;
+    height: 25px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.user-info {
+    border: 0;
+    background-color: #592202;
+    color: #FFFFFF;
+}
+
+.btn-cart {
+    width: 20%;
+    margin: 0 1%;
+}
+
+.btn-exit {
+    margin: 0 1%;
+    width: 20%;
+}
+.group-btn{
+    text-align: end;
+    width: 100%;
+}
+.btn-buy{
+    margin: 0.5em;
+    border-radius: 1em;
+}
+
+.list-products{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #BF814B;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+    height: 100%;
+}
+.product-card{
+    background-color: #FFFFFF;
+    margin: 0.7em;
+    padding: 0 1em;
+    height: 27em;
+    border-radius: 1em;
+    text-align: center;
+}
+.img-center{
+    height: 14em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
